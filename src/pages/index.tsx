@@ -1,5 +1,9 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
+import card_1 from 'public/images/apps.jpg'
+import card_2 from 'public/images/giddy-grocery.jpg'
+import card_3 from 'public/images/persona-collage.jpg'
+import card_4 from 'public/images/waves.jpeg'
 
 export default function Home() {
   return (
@@ -11,7 +15,45 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        hello
+        
+        <div className={styles.outerGrid}>
+          
+          <div className={styles.intro}>
+            <p className={styles.p}>Hello, Tasman here. This is my portfolio page. <br/>
+                Please feel free to browse my projects if you like 😊
+            </p>
+          </div>
+
+          <div className={styles.innerGrid}>
+
+            <div className={styles.img} style={{backgroundImage: `url(${card_1.src})`}}>
+              <div className={styles.cardTxt}>
+                <span className={styles.span}>Web apps</span>
+              </div>
+            </div>
+
+            <div className={styles.img} style={{backgroundImage: `url(${card_2.src})`}}>
+              <div className={styles.cardTxt}>
+                <span className={styles.span}>Websites</span>
+              </div>
+            </div>
+
+            <div className={styles.img} style={{backgroundImage: `url(${card_3.src})`}}>
+              <div className={styles.cardTxt}>
+                <span className={styles.span}>Design porfolio</span>
+              </div>
+            </div>
+
+            <div className={styles.img} style={{backgroundImage: `url(${card_4.src})`}}>
+              <div className={styles.cardTxt}>
+                <span className={styles.span}>About</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </main>
     </>
   )
