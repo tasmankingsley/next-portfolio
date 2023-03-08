@@ -15,6 +15,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
+      <div className={styles.header}>
+        <span className={styles.title}>title</span>
+        <span className={styles.mode}>☯</span>
+      </div>
+
+      <span className={styles.burg}>
+         =
+      </span>
         
         <div className={styles.outerGrid}>
           
