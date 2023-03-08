@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
+import styles from './styles/index.module.css'
 import card_1 from 'public/images/apps.jpg'
 import card_2 from 'public/images/giddy-grocery.jpg'
 import card_3 from 'public/images/persona-collage.jpg'
 import card_4 from 'public/images/waves.jpeg'
 
-export default function Home() {
+export default function index() {
   return (
     <>
       <Head>
@@ -15,15 +16,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-
-      <div className={styles.header}>
-        <span className={styles.title}>title</span>
-        <span className={styles.mode}>☯</span>
-      </div>
-
-      <span className={styles.burg}>
-         =
-      </span>
         
         <div className={styles.outerGrid}>
           
@@ -34,30 +26,29 @@ export default function Home() {
           </div>
 
           <div className={styles.innerGrid}>
+            <Link href="./" className={styles.img} style={{backgroundImage: `url(${card_1.src})`}}>
+                <div className={styles.cardTxt}>
+                  <span className={styles.span}>Web apps</span>
+                </div>
+            </Link>
 
-            <div className={styles.img} style={{backgroundImage: `url(${card_1.src})`}}>
-              <div className={styles.cardTxt}>
-                <span className={styles.span}>Web apps</span>
-              </div>
-            </div>
-
-            <div className={styles.img} style={{backgroundImage: `url(${card_2.src})`}}>
+            <Link href="./" className={styles.img} style={{backgroundImage: `url(${card_2.src})`}}>
               <div className={styles.cardTxt}>
                 <span className={styles.span}>Websites</span>
               </div>
-            </div>
+            </Link>
 
-            <div className={styles.img} style={{backgroundImage: `url(${card_3.src})`}}>
+            <Link href="./" className={styles.img} style={{backgroundImage: `url(${card_3.src})`}}>
               <div className={styles.cardTxt}>
                 <span className={styles.span}>Design porfolio</span>
               </div>
-            </div>
+            </Link>
 
-            <div className={styles.img} style={{backgroundImage: `url(${card_4.src})`}}>
+            <Link href="./" className={styles.img} style={{backgroundImage: `url(${card_4.src})`}}>
               <div className={styles.cardTxt}>
                 <span className={styles.span}>About</span>
               </div>
-            </div>
+            </Link>
 
           </div>
 
