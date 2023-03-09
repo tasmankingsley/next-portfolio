@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './styles/globals.css'
 import styles from './styles/layout.module.css'
 
@@ -8,7 +9,10 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
         <html lang="en">
             <body>
                 <div className={styles.header}>
-                    <span className={styles.title}>Tasman Kingsley</span>
+                    <Link href="./">
+                        <span className={styles.title}>Tasman Kingsley</span>
+                    </Link>
+                    
                     <span className={styles.mode}>☯</span>
                 </div>
 

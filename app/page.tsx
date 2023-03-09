@@ -44,7 +44,7 @@ export default function index() {
               </div>
             </Link>
 
-            <Link href="./" className={styles.img} style={{backgroundImage: `url(${card_4.src})`}}>
+            <Link href="./about" className={styles.img} style={{backgroundImage: `url(${card_4.src})`}}>
               <div className={styles.cardTxt}>
                 <span className={styles.span}>About</span>
               </div>
