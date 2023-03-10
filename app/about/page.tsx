@@ -7,7 +7,7 @@ export default function about() {
             <div className={styles.contentDiv}>
                 <img className={styles.img} src={profile.src} alt=""></img>
 
-                <div className={styles.card}>
+                <div className="cardTheme">
                     <span className={styles.span} style={{paddingTop: "30px"}}>About me</span>
 
                     <p>Hello fellow being! My name is Tasman.
